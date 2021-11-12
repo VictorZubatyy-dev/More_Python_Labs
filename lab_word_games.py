@@ -13,15 +13,12 @@
 from worddupe import WordDuplication
 from wordscramb import WordScramble
 
-
 # don't need to use WordGames class, because of inheritance
 
 scrambled_words = WordScramble()
 scrambled_words.word_play()
-print(scrambled_words.the_words)
 
 duplicated_word = WordDuplication()
 duplicated_word.word_play()
-print(duplicated_word.the_words)
 
 

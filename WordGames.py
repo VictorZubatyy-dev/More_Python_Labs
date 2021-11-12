@@ -41,7 +41,6 @@ class WordGames:
         print('Please enter a word or a sentence:')
         self._my_words = input()
 
-
     @property
     def the_words(self):
         """
