@@ -1,12 +1,9 @@
-class Car:
-    def __init__(self, make, model, year, colour ="blue"):
-        self.colour = colour
-        self.make = make
-        self.model = model
-        self.year = year
+from vehicle import Vehicle
+# import parent class to inherit
 
-    def drive(self):
-        print("This" + self.make + "drives.")
-
-    def stop(self):
-        print("This" + self.make + "stopped.")
+class Car(Vehicle):
+    """
+    Child class card.
+    Just inherits parent since no new attributes are needed for a car.
+    """
+    pass
