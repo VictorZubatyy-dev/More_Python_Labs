@@ -1,16 +1,23 @@
-# This is a sample Python script.
+from vehicle import Vehicle
+from bus import Bus
+from train import Train
+# run here to test inheritance functionality
+# import all classes to access specific attributes created from those specific classes
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+# car inherits the vehicle attributes, it does not need any more attributes added, bus and train do
+car1 = Vehicle("Blue", "Car", 20000)
+print(car1.cost)
+bus1 = Bus("Red", "Bus", 100000, 101, "76a")
+print(bus1.bus_no)
+train1 = Train("Red", "Train", 20000, 200, "2001")
+print(train1.train_stop)
 
-from kivy import App
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
+
+
+
+
+
